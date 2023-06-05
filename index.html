@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <title>Cadê meu Pet?</title>
+  <link rel="icon" type="image/x-icon" href="logocmp.png">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!--<div class="mobile-menu">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>-->
+
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-bg" id="menu-bg"></div>
+
+      <!--</div>
+      <ul class="nav-list">
+        <li><a class="opcoes" href="/">Inicio</a></li>
+        <li><a class="opcoes" href="/">Sobre</a></li>
+        <li><a class="opcoes" href="/">Projetos</a></li>
+        <li><a class="opcoes" href="/">Contato</a></li>
+      </ul>
+    </nav>-->
+  </header>
+  <main class="cabeca"></main>
+  </div>
+  <script src="mobile-navbar.js"></script>
+  <div class="imagem">
+    <a href="/"><img class="imagem-topo" src="logocmp.png" alt=""></a>
+  </div>
+
+  <div class="container">
+
+    <div class="input-group">
+      <div class="input-box">
+        <label for="nome-pet">Nome do Pet:</label>
+        <input id="nome-pet" type="text" name="nome-pet" placeholder="Digite o nome do pet..." required>
+
+        <div class="container-grid">
+          <div class="raca-idade">
+            <form action="/">
+              <div class="input-ri">
+                <label for="raca-pet">Raça:</label>
+                <input id="raca-pet" type="text" name="raca-pet" placeholder="Digite a raça do pet..." required>
+
+              </div>
+
+
+              <div class="input-ri">
+                <label for="idade-pet">Idade:</label>
+                <input id="idade-pet" type="text" name="idade-pet" placeholder="Digite a idade do pet..." required>
+              </div>
+          </div>
+        </div>
+
+        <div class="genero">
+          <div class="titulo-genero">
+          </div>
+          <h4>Sexo:</h4>
+        </div>
+        <div class="grupo-genero">
+          <input type="radio" id="macho" name="grupo">
+          <label for="macho">Macho</label>
+        </div>
+
+        <div class="grupo-genero">
+          <input type="radio" id="femea" name="grupo">
+          <label for="macho">Femea</label>
+        </div>
+
+        <div class="input-box">
+          <label for="estado">Estado:</label>
+          <input id="estado" type="text" name="Estado" placeholder="Digite o Estado..." required>
+        </div>
+
+        <div class="input-box">
+          <label for="cidade">Cidade:</label>
+          <input id="cidade" type="text" name="cidade" placeholder="Digite a Cidade..." required>
+
+          <h4>Vistor por último:</h4><br>
+          <textarea name="visto" id="visto" rows="12" placeholder="Nos diga onde viu seu pet pela última vez. Qualquer acessório que o pet estivesse usando deve ser informado aqui também..."></textarea>
+        </div>
+
+        <div class="input-box">
+          <label for="estado">Telefone:</label>
+          <input id="telefone" type="tel" name="telefone" placeholder="Digite o Telefone..." required>
+        </div>
+
+        <h4>Carregue a imagem</h4><br>
+        <input id="imagem-usuario" type="file" name="imagem-usuario" placeholder="Carregar imagem..." required>
+        <br>
+        <br>
+        <button> <a href="">Encontrar meu Pet</a></button>
+        <footer id="rodape">
+
+          <div class="container">
+            <div class="redes_sociais">
+              <ul id="icones_redes">
+                <li> <a href="#" target="_blank">
+                    <img src="icone_email.png" alt="e-mail">
+                  </a>
+                </li>
+
+                <li> <a href="#" target="_blank">
+                    <img src="icone_wpp.png" alt="whatsapp">
+                  </a>
+                </li>
+
+                <li> <a href="#" target="_blank">
+                    <img src="icone_instagram.png" alt="instagram">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </footer>
+
+      </div>
+    </div>
+  </div>
+  </form>
+</body>
+
+</html>
