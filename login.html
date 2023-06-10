@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Login - Cadê meu pet?</title>
+        <meta charset="utf-8">
+	
+	    <link rel="stylesheet" href="estilo.css"> <!--css-->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--fonte lobster-->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!--fonte lobster-->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--fonte inika-->
+        <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet"> <!--fonte inika-->
+    
+	<style>
+	    
+		.container-login {
+		border-radius: 22px;
+		background-color:#FAF6D0;
+		width:500px;
+		margin: 0 auto;
+		box-shadow:0 2px 25px #909A92;
+		}
+		
+		.container-login > div {
+		text-align: center;
+		margin:20px;
+		padding:20px;
+		}
+		
+		label {
+		display: block;
+		margin:15px;
+		}
+		
+		input[type="submit"] {
+		  width: 60%;
+		  padding: 15px;
+		  background-color: #30091E;
+		  color: #FAF6D0;
+		  border: none;
+		  border-radius: 1.8rem;
+		  cursor: pointer;
+		  margin-top:20px;
+		  margin-bottom:20px;
+		font-size:1rem;
+		font-family: 'Inika', serif;
+		text-decoration: none;
+		
+		}
+		
+		input::placeholder {
+		color:#909A92;
+		}
+		
+		input[type="email"]{
+		background:#c7d8ab;
+		border-radius:20px;
+		padding: 16px;
+		transition: 0.3s;
+		border:none;
+		}
+		
+		input[type="email"]:hover {
+		background-color: #e9edc9;
+		border:none;
+		}
+		
+		input[type="email"]:focus {
+		outline:none;
+		border:none;
+		}
+		
+		input[type="password"]{
+		background:#c7d8ab;
+		border-radius:20px;
+		padding: 16px;
+		margin-bottom:10px;
+		transition: 0.3s;
+		border:none;
+		}
+		
+		input[type="password"]:hover {
+		background-color: #e9edc9;
+		}
+		
+		input[type="password"]:focus {
+		outline:none;
+		border:none;
+		}
+		
+		h1 {
+		color:#30091E;
+		font-size: 2.3rem;
+		font-family:'Lobster', cursive;
+		height:3.7rem;
+		padding-top:1rem;
+		}
+		
+		label, p, a {
+		padding:5px;
+		font-size:1rem;
+		font-family: "Inika", serif;
+		text-decoration: none;
+		color: #30091E;
+		}
+		
+		#ircadastro {
+		display: block;
+		text-align:center;
+		text-decoration:none;
+		color:#30091E;
+		margin-bottom:15px;
+		}
+		
+		#logo {
+		padding-top:50px;
+		}
+		
+	</style>
+	</head>
+  
+    <body>
+	
+
+			<header id = "loginbar">
+			 
+				<div id="menu">
+				    <div id="menu-bar" onclick="menuOnClick()">
+						<div id="bar1" class="bar"></div>
+						<div id="bar2" class="bar"></div>
+						<div id="bar3" class="bar"></div>
+				    </div>
+				  <nav class="nav" id="nav">
+					<ul>
+					    <li><a href="file:///C:/Users/luiza/Desktop/cmp/home.html">Home</a></li>
+					    <li><a href="file:///C:/Users/luiza/Desktop/cmp/login.html">Login</a></li>
+					    <li><a href="#">Encontrar meu pet</a></li>
+					    <li><a href="#">Encontrei um pet</a></li>
+						<li><a href="#">Achados e perdidos</a></li>
+					</ul>
+				  </nav> 
+				</div>
+
+				<div class="menu-bg" id="menu-bg"></div>
+				
+			</header>
+			
+				<header id = "cabecalho">
+					<div class = "container">
+						<div id = "logo">
+							<a href = "file:///C:/Users/luiza/Desktop/cmp/home.html" target = "_blank"> 
+							<img src = "logocmp.png" alt = "logo" width=420 height=200>
+							</a>
+						</div>
+					</div>
+				</header>
+			
+			<section id = "conteudo">
+			<div class = "container-login">
+				<div class = "form">
+					<form method="POST" class="formLogin">
+					<h1>Login</h1>
+					<p>Digite os seus dados de acesso nos campos abaixo.</p>
+					<label for="email">E-mail:</label>
+					<input type="email" placeholder="Digite seu e-mail" autofocus="true" />
+					<label for="password">Senha:</label>
+					<input type="password" placeholder="Digite sua senha" />
+					<input type="submit" value="Acessar" class="btn" />
+					</form>
+				</div>
+			</div>
+			
+			<a href="file:///C:/Users/luiza/Desktop/cmp/cadastro.html" id = "ircadastro">Não possui uma conta?</a>
+				</section>
+	
+	    <footer id = "rodape">
+		
+			<div class = "container">
+				<div class = "redes_sociais">
+					<ul id = "icones_redes">
+						<li> <a href = "#" target = "_blank"> 
+						<img src = "icone_email.png" alt = "e-mail">
+						</a>
+						</li>
+						
+						<li> <a href = "#" target = "_blank"> 
+						<img src = "icone_wpp.png" alt = "whatsapp">
+						</a>
+						</li>
+						
+						<li> <a href = "#" target = "_blank"> 
+						<img src = "icone_instagram.png" alt = "instagram">
+						</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+	    </footer>
+		
+		<script>
+		    function menuOnClick() {
+			  document.getElementById("menu-bar").classList.toggle("change");
+			  document.getElementById("nav").classList.toggle("change");
+			  document.getElementById("menu-bg").classList.toggle("change-bg");
+			}
+		</script>
+    </body>
+  
+</html>
