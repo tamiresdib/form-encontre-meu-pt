@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <title>Cadê meu pet?</title>
+        <meta charset="utf-8">
+	
+	    <link rel="stylesheet" href="estilo.css"> <!--css-->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--fonte lobster-->
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> <!--fonte lobster-->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--fonte inika-->
+        <link href="https://fonts.googleapis.com/css2?family=Inika&display=swap" rel="stylesheet"> <!--fonte inika-->
+    
+	<style>
+	.botao {
+		display:block;
+		background-color:#30091E;
+		color:#FAF6D0;
+		border-radius: 1.8rem;
+		opacity: 0.95;
+		width: 18rem;
+		height: 4.2rem;
+		margin:1.8rem;
+		font-size:1.6rem;
+		border-style:none;
+		font-family: 'Inika', serif;
+		text-decoration: none;
+	}
+	
+	.botao:hover {
+		cursor: pointer;
+		background-color: #744F78;
+		color: #fffea;
+		text-shadow: none;
+		text-decoration: none;
+		border-style:none;
+	}
+	
+
+	#cachorro1 {
+		margin-top:1.7rem;
+	}
+		
+	.titulo {
+		color:#30091E;
+		font-size:3.7rem;
+		font-family:'Lobster', cursive;
+		text-align:center;
+	}
+	
+	h2 {
+		color:#30091E;
+		font-size: 2.3rem;
+		font-family:'Lobster', cursive;
+		background:#C7D8AB;
+		height:3.7rem;
+		width:23.7rem;
+		padding-top:0.6rem;
+		text-align:center;
+	}
+	
+	.container-grid {
+		display:grid;
+		grid-template-columns:auto auto;
+		grid-template-rows:auto;
+		justify-items: center;
+	}
+	
+	.container-grid > l1 {
+		grid-column-start:1;
+        grid-column-end:2;
+	}
+	
+	.container-grid > l2 {
+		grid-column-start:2;
+        grid-column-end:2;
+	}
+	
+	.container-grid > div > ul > li {
+		font-size:1.5rem;
+		line-height:3rem;
+		text-align: left;
+		padding:0 0 0 2.5rem;
+	}
+	</style>
+	</head>
+  
+    <body>
+	
+
+			<header id = "loginbar">
+			 
+				<div id="menu">
+				    <div id="menu-bar" onclick="menuOnClick()">
+						<div id="bar1" class="bar"></div>
+						<div id="bar2" class="bar"></div>
+						<div id="bar3" class="bar"></div>
+				    </div>
+				  <nav class="nav" id="nav">
+					<ul>
+					    <li><a href="file:///C:/Users/luiza/Desktop/cmp/home.html">Home</a></li>
+					    <li><a href="file:///C:/Users/luiza/Desktop/cmp/login.html">Login</a></li>
+					    <li><a href="#">Encontrar meu pet</a></li>
+					    <li><a href="#">Encontrei um pet</a></li>
+						<li><a href="#">Achados e perdidos</a></li>
+					</ul>
+				  </nav> 
+				</div>
+
+				<div class="menu-bg" id="menu-bg"></div>
+				
+			</header>
+			
+				<header id = "cabecalho">
+					<div class = "container">
+						<div id = "logo">
+							<a href="file:///C:/Users/luiza/Desktop/cmp/home.html" ><img src="logocmp.png" alt="logo" width=420 height=200></a>
+						</div>
+
+					    <div id = "botoes">
+							<a href="#"><button class = "botao">Encontrar meu pet</button></a>
+							<a href="#"><button class = "botao">Encontrar dono</button></a>
+						</div>
+											
+						<div id = "cachorro1"> <img src="cachorro1.png" alt="cachorro" width=500 height=260>
+						</div>
+					</div>
+				</header>
+			
+			<section id = "conteudo">
+			    <h1 class = "titulo">O que fazer?</h1>
+					
+				<div class = "container-grid">
+					    <div id = "l1">
+							<h2>Perdi meu pet!</h2>
+							<ul>
+								<li>Faça login</li>
+								<li>Vá em "Encontrar meu pet"</li>
+								<li>Preencha o formulário</li>
+								<li>Fique ligado em nossas <br> redes sociais e no nosso site <br> para obter informações</li>
+							</ul>
+						</div>
+						
+						<div id = "l2">
+							<h2>Encontrei um pet!</h2>
+							<ul>
+								<li>Faça login</li>
+								<li>Vá em "Encontrar dono"</li>
+								<li>Preencha o formulário</li>
+								<li>Fique ligado em nossas <br> redes sociais e no nosso  site.<br> Nos ajude a devolver pets <br> para seus lares!</li>
+							</ul>
+						</div>
+				</div>
+					
+				</section>
+	
+	    <footer id = "rodape">
+		
+			<div class = "container">
+				<div class = "redes_sociais">
+					<ul id = "icones_redes">
+						<li> <a href = "#" target = "_blank"> 
+						<img src = "icone_email.png" alt = "e-mail">
+						</a>
+						</li>
+						
+						<li> <a href = "#" target = "_blank"> 
+						<img src = "icone_wpp.png" alt = "whatsapp">
+						</a>
+						</li>
+						
+						<li> <a href = "#" target = "_blank"> 
+						<img src = "icone_instagram.png" alt = "instagram">
+						</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+	    </footer>
+		
+		<script>
+		    function menuOnClick() {
+			  document.getElementById("menu-bar").classList.toggle("change");
+			  document.getElementById("nav").classList.toggle("change");
+			  document.getElementById("menu-bg").classList.toggle("change-bg");
+			}
+		</script>
+    </body>
+  
+</html>
